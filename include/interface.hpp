@@ -22,21 +22,20 @@ public:
 };
 
 // Data interface between File I/O and Parser
-// 
+// Holds a list of strings to hold lines of text for the parser, and a list of parsed instructions for output 
 class Interface {
 private:
 	list<string*> lines;
 	list<string*>::iterator lines_it;
 
-	list<ParsedNode*> parsed_list;
+	list<ParsedNode*> parsed;
 	list<ParsedNode*>::iterator parsed_it;
 public:
   	Interface();
-  	~Interface();
 
 	// Adding functions
-	int add_line(string* line);
-	int add_parsed(ParsedNode Node);
+	void add_line(string line);
+	void add_parsed(ParsedNode& Node);
 
 	// Step functions 
 	string* step_lines();
