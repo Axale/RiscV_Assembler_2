@@ -1,3 +1,5 @@
+#ifndef __INTERFACE_HPP__
+#define __INTERFACE_HPP__
 #include <vector>
 #include <string>
 #include <list>
@@ -10,15 +12,15 @@ using namespace std;
 // Its mainly a data storage class, so no fancy methods
 class ParsedNode {
 private:
-  	int address;
-  	int instruction;
+  	uint32_t address;
+  	uint32_t instruction;
 public:
-  	ParsedNode(int address, int instruction);
+  	ParsedNode(uint32_t address, uint32_t instruction);
   	~ParsedNode();
 	
 	// Getters/Setters
-	int get_address(); void set_address(int address);
-	int get_instruction(); void set_instruction(int instruction);
+	uint32_t get_address(); void set_address(uint32_t address);
+	uint32_t get_instruction(); void set_instruction(uint32_t instruction);
 };
 
 // Data interface between File I/O and Parser
@@ -41,3 +43,5 @@ public:
 	string* step_lines();
 	ParsedNode* step_parsed();
 };
+
+#endif

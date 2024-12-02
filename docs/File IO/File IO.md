@@ -13,7 +13,6 @@ Methods
 		Return Values
 			0 on success
 			-1 on general failure
-			-2 on file not found
 	file_output
 		Arguments
 			Interface
