@@ -11,3 +11,6 @@ Argument Inputs
 Output
 	Intel Hex file, called program.hex
 Written in C++
+Third-Party libraries:
+	JSON
+		https://github.com/nlohmann/json
