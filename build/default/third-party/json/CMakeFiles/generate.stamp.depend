@@ -1,9 +1,0 @@
-# CMake generation dependency list for this directory.
-C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake
-C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/ExternalProject.cmake
-C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/GNUInstallDirs.cmake
-C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake
-C:/Users/wbhag/Desktop/Python Stuff/riscv_assembler_v2/third-party/json/CMakeLists.txt
-C:/Users/wbhag/Desktop/Python Stuff/riscv_assembler_v2/third-party/json/cmake/config.cmake.in
-C:/Users/wbhag/Desktop/Python Stuff/riscv_assembler_v2/third-party/json/cmake/nlohmann_jsonConfigVersion.cmake.in
-C:/Users/wbhag/Desktop/Python Stuff/riscv_assembler_v2/third-party/json/cmake/pkg-config.pc.in

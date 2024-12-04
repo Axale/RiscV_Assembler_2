@@ -1,7 +1,0 @@
-prefix=C:/Users/wbhag/Desktop/Python Stuff/riscv_assembler_v2/build/install/default
-includedir=${prefix}/include
-
-Name: nlohmann_json
-Description: JSON for Modern C++
-Version: 3.11.3
-Cflags: -I${includedir}

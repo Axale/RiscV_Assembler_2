@@ -1,3 +1,0 @@
-C:/Users/wbhag/Desktop/Python Stuff/riscv_assembler_v2/build/default/CMakeFiles/ALL_BUILD.dir
-C:/Users/wbhag/Desktop/Python Stuff/riscv_assembler_v2/build/default/CMakeFiles/ZERO_CHECK.dir
-C:/Users/wbhag/Desktop/Python Stuff/riscv_assembler_v2/build/default/third-party/json/CMakeFiles/ALL_BUILD.dir

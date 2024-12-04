@@ -1,27 +1,22 @@
 {
-  "version": 8,
-  "configurePresets": [
-    {
-      "name": "default",
-      "displayName": "Visual Studio Community 2022 Release - x86_amd64",
-      "description": "Using compilers for Visual Studio 17 2022 (x86_x64 architecture)",
-      "generator": "Visual Studio 17 2022",
-      "toolset": "host=x86",
-      "architecture": "x64",
-      "binaryDir": "${sourceDir}/build/${presetName}",
-      "cacheVariables": {
-        "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/install/${presetName}",
-        "CMAKE_C_COMPILER": "cl.exe",
-        "CMAKE_CXX_COMPILER": "cl.exe"
-      }
-    }
-  ],
-  "buildPresets": [
-    {
-      "name": "default-debug",
-      "displayName": "Visual Studio Community 2022 Release - x86_amd64 - Debug",
-      "configurePreset": "default",
-      "configuration": "Debug"
-    }
-  ]
+    "version": 8,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 10,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "io-test",
+            "displayName": "io-test config",
+            "description": "Default build using Ninja generator",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "APP_NAME": "${presetName}",
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_CXX_COMPILER": "C++",
+                "CMAKE_TOOLCHAIN_FILE": null
+            }
+        }
+    ]
 }
