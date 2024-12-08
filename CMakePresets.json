@@ -13,7 +13,6 @@
             "binaryDir": "${sourceDir}/build/${presetName}",
             "cacheVariables": {
                 "APP_NAME": "${presetName}",
-                "CMAKE_BUILD_TYPE": "Debug",
                 "CMAKE_CXX_COMPILER": "C++",
                 "CMAKE_TOOLCHAIN_FILE": null
             }
