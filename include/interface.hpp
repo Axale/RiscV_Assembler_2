@@ -10,11 +10,11 @@ using namespace std;
 // Node for the list of opcodes.
 // Has the address so I can easily do org instructions. 
 // Its mainly a data storage class, so no fancy methods
-class ParsedNode {
-private:
+class ParsedNode{
+public:
   	uint32_t address;
   	uint32_t instruction;
-public:
+	ParsedNode();
   	ParsedNode(uint32_t address, uint32_t instruction);
   	~ParsedNode();
 	

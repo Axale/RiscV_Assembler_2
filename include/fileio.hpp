@@ -1,6 +1,7 @@
 #ifndef __FILEIO_HPP__
 #define __FILEIO_HPP__
 #include "interface.hpp"
+#define TEST_IO
 
 // File IO class that abstracts two methods: one for getting the code, and the other for placing the raw binary in a file.
 class FileIO {

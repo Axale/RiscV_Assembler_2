@@ -4,6 +4,16 @@
 
 using namespace std;
 
+ParsedNode::ParsedNode() {
+	address = 0;
+	instruction = 0;
+}
+
+ParsedNode::ParsedNode(uint32_t addr, uint32_t instr) {
+	address = addr;
+	instruction = instr;
+}
+
 Interface::Interface() {
 	lines.clear();
     this->lines_it = lines.begin();
