@@ -46,7 +46,7 @@ string FileIO::prep_line(ParsedNode& Node) {
     sum *= 0xFF;
     sum = ~sum + 1;
     stream << setfill('0') << setw(sizeof(char)) << std::hex << sum;
-    
+    return stream.str();
 }
 
 #ifdef TEST_IO

@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AED67C89-9F44-3752-9793-BDCF95F5EF98}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/third-party/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/third-party/json" "-BC:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/cm_mods/builds/json" --check-stamp-file "C:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/cm_mods/builds/json/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Templates\CPackConfig.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeCXXCompiler.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeRCCompiler.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeSystem.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\config.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\nlohmann_jsonConfigVersion.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/third-party/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/third-party/json" "-BC:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/cm_mods/builds/json" --check-stamp-file "C:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/cm_mods/builds/json/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Templates\CPackConfig.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeCXXCompiler.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeRCCompiler.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeSystem.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\config.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\nlohmann_jsonConfigVersion.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/third-party/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/third-party/json" "-BC:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/cm_mods/builds/json" --check-stamp-file "C:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/cm_mods/builds/json/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Templates\CPackConfig.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeCXXCompiler.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeRCCompiler.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeSystem.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\config.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\nlohmann_jsonConfigVersion.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/third-party/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/third-party/json" "-BC:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/cm_mods/builds/json" --check-stamp-file "C:/Users/wbhag/Desktop/CS/Personal Programming Ventures/RiscV_Assembler_2/cm_mods/builds/json/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Templates\CPackConfig.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeCXXCompiler.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeRCCompiler.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\3.22.0-rc2\CMakeSystem.cmake;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\config.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\nlohmann_jsonConfigVersion.cmake.in;C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\third-party\json\cmake\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\ZERO_CHECK.vcxproj">
+      <Project>{FF0F37EF-92B7-30A0-B629-2006C79C4875}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\abi\diag\abi_compat_diag.vcxproj">
+      <Project>{9965CC7D-E220-3A66-8DA7-53ECCE0C3D5D}</Project>
+      <Name>abi_compat_diag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\abi\diag\abi_compat_diag_off.vcxproj">
+      <Project>{5524E7EE-8D75-397F-8BE2-74085D0AED7F}</Project>
+      <Name>abi_compat_diag_off</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\abi\diag\abi_compat_diag_on.vcxproj">
+      <Project>{00B01F87-33F4-3E6F-931A-8A067A1DC975}</Project>
+      <Name>abi_compat_diag_on</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\abi\inline_ns\abi_compat_inline_ns.vcxproj">
+      <Project>{FAEB26F7-5F61-3144-A297-FB695D36B38A}</Project>
+      <Name>abi_compat_inline_ns</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\abi\abi_compat_main.vcxproj">
+      <Project>{4DDCD5D3-AADD-3EA2-9F2A-A550B7025950}</Project>
+      <Name>abi_compat_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\abi\config\abi_config_custom.vcxproj">
+      <Project>{628E499D-09EC-3AC2-9678-BC0CB558AEEA}</Project>
+      <Name>abi_config_custom</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\abi\config\abi_config_default.vcxproj">
+      <Project>{02D2F573-44C1-3556-BE54-FEDFA53C14C5}</Project>
+      <Name>abi_config_default</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\abi\config\abi_config_noversion.vcxproj">
+      <Project>{138AD70F-CF84-35CE-9BAE-EB4A9CF6F7D8}</Project>
+      <Name>abi_config_noversion</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-algorithms_cpp11.vcxproj">
+      <Project>{BF34B1F0-099A-354C-AC62-E70ABF630EC9}</Project>
+      <Name>test-algorithms_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-allocator_cpp11.vcxproj">
+      <Project>{737B0BDA-CE95-3CBD-8D97-100FDA31A38F}</Project>
+      <Name>test-allocator_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-alt-string_cpp11.vcxproj">
+      <Project>{38C659BB-8922-3D09-97C2-CB827A18A669}</Project>
+      <Name>test-alt-string_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-assert_macro_cpp11.vcxproj">
+      <Project>{D4997291-5B12-35EB-AF4E-F3AE10A580DF}</Project>
+      <Name>test-assert_macro_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-binary_formats_cpp11.vcxproj">
+      <Project>{76EB3C66-58DA-3D98-AC41-C6E3D1B88897}</Project>
+      <Name>test-binary_formats_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-bjdata_cpp11.vcxproj">
+      <Project>{BBD6A03D-2118-37BC-9E3B-2A1EC3A07D1B}</Project>
+      <Name>test-bjdata_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-bson_cpp11.vcxproj">
+      <Project>{652E9460-4F9A-3063-8EF8-C1BFDF128B0E}</Project>
+      <Name>test-bson_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-byte_container_with_subtype_cpp11.vcxproj">
+      <Project>{A11F8BA6-B0EB-3343-A700-DE650E8A9A5A}</Project>
+      <Name>test-byte_container_with_subtype_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-capacity_cpp11.vcxproj">
+      <Project>{4D50AFE6-EDEF-354F-A695-A7C7F9BBA5E9}</Project>
+      <Name>test-capacity_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-cbor_cpp11.vcxproj">
+      <Project>{D6BE5B07-FDB9-3090-BD18-6D9F4611EA22}</Project>
+      <Name>test-cbor_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-class_const_iterator_cpp11.vcxproj">
+      <Project>{12C3E70E-A833-3D39-8893-D035093154FB}</Project>
+      <Name>test-class_const_iterator_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-class_iterator_cpp11.vcxproj">
+      <Project>{AD89C8BB-03A5-323C-952F-69BF7D343E6B}</Project>
+      <Name>test-class_iterator_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-class_lexer_cpp11.vcxproj">
+      <Project>{3930F40A-E878-3DD3-A9B3-59D2E97A5850}</Project>
+      <Name>test-class_lexer_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-class_parser_cpp11.vcxproj">
+      <Project>{439A112E-10CB-3557-BB94-A8BDBFBF2F9D}</Project>
+      <Name>test-class_parser_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-comparison_cpp11.vcxproj">
+      <Project>{057CD3C5-A7AB-3F99-ACB3-3E88D1D62D7E}</Project>
+      <Name>test-comparison_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-comparison_cpp20.vcxproj">
+      <Project>{20B57FA1-4617-34C5-B457-355611183054}</Project>
+      <Name>test-comparison_cpp20</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-comparison_legacy_cpp11.vcxproj">
+      <Project>{EF39050B-BF8C-324D-A330-6BCD8D2D14F3}</Project>
+      <Name>test-comparison_legacy_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-comparison_legacy_cpp20.vcxproj">
+      <Project>{2F2B7253-07C1-3695-ABB3-163B7123F857}</Project>
+      <Name>test-comparison_legacy_cpp20</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-concepts_cpp11.vcxproj">
+      <Project>{F4AB64BE-BFAB-3BE8-9930-46398DAD7E7B}</Project>
+      <Name>test-concepts_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-constructor1_cpp11.vcxproj">
+      <Project>{26B81E8D-778D-3A38-9845-7C10629324A7}</Project>
+      <Name>test-constructor1_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-constructor2_cpp11.vcxproj">
+      <Project>{B2D24628-2FAC-3570-851D-076A68D69C95}</Project>
+      <Name>test-constructor2_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-convenience_cpp11.vcxproj">
+      <Project>{B13D6ACF-9E4B-3A6D-BF81-5F507D49DD16}</Project>
+      <Name>test-convenience_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-conversions_cpp11.vcxproj">
+      <Project>{61FDFAF9-6510-353E-9F32-D5F85C1F5E72}</Project>
+      <Name>test-conversions_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-conversions_cpp14.vcxproj">
+      <Project>{608CD5B6-E8C9-3C27-B1A2-4E713BDAFE65}</Project>
+      <Name>test-conversions_cpp14</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-conversions_cpp17.vcxproj">
+      <Project>{7049F418-D973-34CC-8F17-3EF343C3DCA1}</Project>
+      <Name>test-conversions_cpp17</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-custom-base-class_cpp11.vcxproj">
+      <Project>{C0AD67F6-F5B4-32A3-9704-02F5E4AB21C4}</Project>
+      <Name>test-custom-base-class_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-deserialization_cpp11.vcxproj">
+      <Project>{E924DC3C-7371-3D08-89BA-0792F5A1E494}</Project>
+      <Name>test-deserialization_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-deserialization_cpp20.vcxproj">
+      <Project>{EB6A1397-BD76-363E-B32E-A8FBD470DE38}</Project>
+      <Name>test-deserialization_cpp20</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-diagnostics_cpp11.vcxproj">
+      <Project>{7BA12442-98B7-3D2F-B370-9A563284E7FA}</Project>
+      <Name>test-diagnostics_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-disabled_exceptions_cpp11.vcxproj">
+      <Project>{6516942C-29ED-3004-9091-591739C67D5D}</Project>
+      <Name>test-disabled_exceptions_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-element_access1_cpp11.vcxproj">
+      <Project>{211A814B-8494-3F7F-BBF5-E65520140DEC}</Project>
+      <Name>test-element_access1_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-element_access2_cpp11.vcxproj">
+      <Project>{E4200E29-ECB1-3327-95B7-9E01486253FE}</Project>
+      <Name>test-element_access2_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-element_access2_cpp14.vcxproj">
+      <Project>{C6C31AF3-1AC6-3D01-AC1C-A39692476299}</Project>
+      <Name>test-element_access2_cpp14</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-element_access2_cpp17.vcxproj">
+      <Project>{4B8453D0-F3BF-327B-B7E5-FD68FE2842CD}</Project>
+      <Name>test-element_access2_cpp17</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-hash_cpp11.vcxproj">
+      <Project>{1E30A19F-DE18-31F3-93F5-C1AA071664C1}</Project>
+      <Name>test-hash_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-inspection_cpp11.vcxproj">
+      <Project>{C19B0DBF-7990-340C-BF85-75B91BB3C568}</Project>
+      <Name>test-inspection_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-items_cpp11.vcxproj">
+      <Project>{97138E4F-082E-3AA6-B0FB-C77AB5D3B2B0}</Project>
+      <Name>test-items_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-items_cpp17.vcxproj">
+      <Project>{17C2928A-282F-3299-85F2-CBD7093640A0}</Project>
+      <Name>test-items_cpp17</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-iterators1_cpp11.vcxproj">
+      <Project>{525CE9D3-29BB-3B2A-81E9-1472D39A2FB8}</Project>
+      <Name>test-iterators1_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-iterators2_cpp11.vcxproj">
+      <Project>{FE87B364-BA16-3200-B37D-F64EB05FD6E5}</Project>
+      <Name>test-iterators2_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-iterators2_cpp20.vcxproj">
+      <Project>{0D172017-A706-3697-A380-0E995046710D}</Project>
+      <Name>test-iterators2_cpp20</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-iterators3_cpp11.vcxproj">
+      <Project>{737F4A5B-77A4-31B8-B048-7D7C147417C1}</Project>
+      <Name>test-iterators3_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-iterators3_cpp14.vcxproj">
+      <Project>{7EA4721F-BD86-3C98-A12C-BC43B4CFD565}</Project>
+      <Name>test-iterators3_cpp14</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-json_patch_cpp11.vcxproj">
+      <Project>{2B19D22F-20F0-3FA4-BEEB-B7A2184D2683}</Project>
+      <Name>test-json_patch_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-json_pointer_cpp11.vcxproj">
+      <Project>{DCC2E05B-D442-31AE-B127-DA3EEDA3D310}</Project>
+      <Name>test-json_pointer_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-json_pointer_cpp20.vcxproj">
+      <Project>{4E1623BD-C150-3DC3-84B6-752669084102}</Project>
+      <Name>test-json_pointer_cpp20</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-large_json_cpp11.vcxproj">
+      <Project>{22343357-6233-3C3E-8C83-2B3A70F16F6F}</Project>
+      <Name>test-large_json_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-locale-cpp_cpp11.vcxproj">
+      <Project>{9935E590-5E78-31BC-9E21-D15DDF576D43}</Project>
+      <Name>test-locale-cpp_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-merge_patch_cpp11.vcxproj">
+      <Project>{72FBF12E-529A-36A9-B424-C1BBD486B424}</Project>
+      <Name>test-merge_patch_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-meta_cpp11.vcxproj">
+      <Project>{49D1F8BC-F01D-3A0F-89DA-F0C4494400C6}</Project>
+      <Name>test-meta_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-modifiers_cpp11.vcxproj">
+      <Project>{F9ABF519-4205-3533-A9E6-9D84EEB983FA}</Project>
+      <Name>test-modifiers_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-msgpack_cpp11.vcxproj">
+      <Project>{9D303A19-E7CE-38A2-A15A-DFABAAE984B6}</Project>
+      <Name>test-msgpack_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-no-mem-leak-on-adl-serialize_cpp11.vcxproj">
+      <Project>{C28D5B83-9163-39B2-9E7F-1273D676F168}</Project>
+      <Name>test-no-mem-leak-on-adl-serialize_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-noexcept_cpp11.vcxproj">
+      <Project>{058DC01A-68DF-3F47-A43B-6710F101A76C}</Project>
+      <Name>test-noexcept_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-ordered_json_cpp11.vcxproj">
+      <Project>{2C954E22-8FD1-34BF-A6FB-3B4C049DCF20}</Project>
+      <Name>test-ordered_json_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-ordered_map_cpp11.vcxproj">
+      <Project>{E328BAB2-350E-3D78-8E8D-A6A086746B15}</Project>
+      <Name>test-ordered_map_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-pointer_access_cpp11.vcxproj">
+      <Project>{793F7730-694D-36E8-AA5D-E17654780739}</Project>
+      <Name>test-pointer_access_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-readme_cpp11.vcxproj">
+      <Project>{14DE4C5A-B935-3E12-BF32-52576CCBF0EF}</Project>
+      <Name>test-readme_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-reference_access_cpp11.vcxproj">
+      <Project>{9E268628-1AB6-368F-A139-D377C8350C0D}</Project>
+      <Name>test-reference_access_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-regression1_cpp11.vcxproj">
+      <Project>{5852D8E4-E855-3005-BBEC-8A3BF3ACC70E}</Project>
+      <Name>test-regression1_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-regression1_cpp17.vcxproj">
+      <Project>{E92A084C-E89C-334E-90EF-10B6DEB419E1}</Project>
+      <Name>test-regression1_cpp17</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-regression2_cpp11.vcxproj">
+      <Project>{9849DCA9-2C08-3DF2-BD7C-884000337B70}</Project>
+      <Name>test-regression2_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-regression2_cpp17.vcxproj">
+      <Project>{71644EA0-42DF-336F-8627-278D4DCE1B10}</Project>
+      <Name>test-regression2_cpp17</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-regression2_cpp20.vcxproj">
+      <Project>{542E3005-C1B5-3DD8-BE9E-A49D862DE1B1}</Project>
+      <Name>test-regression2_cpp20</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-serialization_cpp11.vcxproj">
+      <Project>{9C18BD85-8CD8-3406-8931-E3FB00013F19}</Project>
+      <Name>test-serialization_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-testsuites_cpp11.vcxproj">
+      <Project>{99C4CC92-E591-34BB-ABF3-110E9585E2DF}</Project>
+      <Name>test-testsuites_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-to_chars_cpp11.vcxproj">
+      <Project>{4842C8DD-2D47-3534-80CC-AE6BCDF74A46}</Project>
+      <Name>test-to_chars_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-type_traits_cpp11.vcxproj">
+      <Project>{85D9B764-D72F-3E51-8F07-75EA030818BD}</Project>
+      <Name>test-type_traits_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-ubjson_cpp11.vcxproj">
+      <Project>{1C7445D2-EB0A-3F41-AEEE-6D7276EDDB51}</Project>
+      <Name>test-ubjson_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-udl_cpp11.vcxproj">
+      <Project>{5E314C89-59EC-3598-9BBD-A3C347F11936}</Project>
+      <Name>test-udl_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-udt_cpp11.vcxproj">
+      <Project>{F71AEB59-D218-39BB-93D3-97F63B0CDE84}</Project>
+      <Name>test-udt_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-udt_macro_cpp11.vcxproj">
+      <Project>{D3E9BC24-3514-395D-8C1A-50241321993C}</Project>
+      <Name>test-udt_macro_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-unicode1_cpp11.vcxproj">
+      <Project>{B34A5824-F6A1-3EFD-A121-7DF2B0DC49AB}</Project>
+      <Name>test-unicode1_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-unicode2_cpp11.vcxproj">
+      <Project>{672BEAD4-E913-3AAF-B73F-0B087B016CDB}</Project>
+      <Name>test-unicode2_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-unicode3_cpp11.vcxproj">
+      <Project>{04768712-176A-3162-AC74-3CDD93172C8E}</Project>
+      <Name>test-unicode3_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-unicode4_cpp11.vcxproj">
+      <Project>{68DE2FD6-543A-3E32-9816-A96D429C4A9E}</Project>
+      <Name>test-unicode4_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-unicode5_cpp11.vcxproj">
+      <Project>{D02192D5-E54B-38AA-94E8-F57BA322EC94}</Project>
+      <Name>test-unicode5_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-user_defined_input_cpp11.vcxproj">
+      <Project>{7D2352F5-1256-3815-9E00-7AE22068E512}</Project>
+      <Name>test-user_defined_input_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-windows_h_cpp11.vcxproj">
+      <Project>{94CE5799-456B-3A07-AE25-2F22BF0944E7}</Project>
+      <Name>test-windows_h_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test-wstring_cpp11.vcxproj">
+      <Project>{0BC5C7BE-B47F-3CDB-9B50-0A775A200A32}</Project>
+      <Name>test-wstring_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\wbhag\Desktop\CS\Personal Programming Ventures\RiscV_Assembler_2\cm_mods\builds\json\tests\test_main.vcxproj">
+      <Project>{3C55628A-233C-3691-B206-F13D8D356456}</Project>
+      <Name>test_main</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

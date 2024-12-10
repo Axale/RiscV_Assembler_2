@@ -1,5 +1,4 @@
-{
-  "tests": [
+[
     {
       "test_num": 1,
       "test_name": "Basic Test Case",
@@ -100,5 +99,4 @@
         "instruction": 123456789
       }
     }
-  ]
-}
+]
