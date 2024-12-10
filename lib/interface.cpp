@@ -14,6 +14,14 @@ ParsedNode::ParsedNode(uint32_t addr, uint32_t instr) {
 	instruction = instr;
 }
 
+ParsedNode::~ParsedNode() {return;}
+
+uint32_t ParsedNode::get_address() {return address;}
+void ParsedNode::set_address(uint32_t addr) {address = addr;};
+
+uint32_t ParsedNode::get_instruction() {return instruction;}
+void ParsedNode::set_instruction(uint32_t instr) {instruction = instr;};
+
 Interface::Interface() {
 	lines.clear();
     this->lines_it = lines.begin();

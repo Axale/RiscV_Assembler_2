@@ -15,8 +15,8 @@ public:
   	uint32_t address;
   	uint32_t instruction;
 	ParsedNode();
+	~ParsedNode();
   	ParsedNode(uint32_t address, uint32_t instruction);
-  	~ParsedNode();
 	
 	// Getters/Setters
 	uint32_t get_address(); void set_address(uint32_t address);
