@@ -10,6 +10,7 @@ class FileIO {
     public:
     int file_input(string& file_name, Interface& data_interface);
     int file_output(Interface& file_name);
+    FileIO();
 #ifdef TEST_IO
     string prep_line_wrapper(ParsedNode& node);
 #endif

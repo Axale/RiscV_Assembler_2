@@ -43,7 +43,7 @@
       "test_num": 5,
       "test_name": "Address Not Multiple of 4",
       "expected_success": false,
-      "expected_output": null,
+      "expected_output": "",
       "input": {
         "address": 3,
         "instruction": 19088743
@@ -93,7 +93,7 @@
       "test_num": 10,
       "test_name": "Invalid Address Beyond 16-bit",
       "expected_success": false,
-      "expected_output": null,
+      "expected_output": "",
       "input": {
         "address": 70000,
         "instruction": 123456789

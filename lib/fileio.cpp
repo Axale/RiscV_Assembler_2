@@ -29,7 +29,7 @@ int FileIO::file_input(string& file_name, Interface& data_interface) {
 string FileIO::prep_line(ParsedNode& Node) {
     stringstream stream ;
     if (Node.get_address() >= 0x8000 << 2) {
-        return NULL;
+        return "";
     }
     stream << ":04"
     << std::setfill('0') << std::setw(sizeof(int32_t) )
@@ -45,7 +45,7 @@ string FileIO::prep_line(ParsedNode& Node) {
     }
     sum *= 0xFF;
     sum = ~sum + 1;
-    stream << setfill('0') << setw(sizeof(char)) << std::hex << sum;
+    stream << setfill('0') << setw(sizeof(char)) << std::hex << sum << "\n";
     return stream.str();
 }
 
@@ -54,6 +54,8 @@ string FileIO::prep_line_wrapper(ParsedNode& Node) {
     return FileIO::prep_line(Node);
 }
 #endif
+
+FileIO::FileIO() {};
 
 int FileIO::file_output(Interface& data_interface) {
     return 0;    

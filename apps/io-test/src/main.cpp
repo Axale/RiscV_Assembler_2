@@ -19,8 +19,10 @@ template <typename T, typename U, typename F> class Tester {
         U input;
         Test() : test_num(0), test_name(""), expected_success(false), expected_output(""), input() {}
     };
+    
     private:
     T actual;
+    FileIO FIO;
 
     std::vector<Test> test_vec;
 
@@ -38,19 +40,27 @@ template <typename T, typename U, typename F> class Tester {
 
     Tester(std::string& json_path, F funder_test) {
         function_under_test = funder_test;
-        ifstream js_file(json_path.c_str(), std::ifstream::in);
+    }
+
+    int init_tests(std::string& path) {
+        ifstream js_file(path.c_str(), std::ifstream::in);
+        if(js_file.fail()) {
+            return -1;
+        }
+
         nlohmann::json jdata = nlohmann::json::parse(js_file);
         test_vec = jdata.get<std::vector<Test>>();
-        
+        js_file.close();
+        return 0;
     }
     
-    int run_tests() {
+    void run_tests() {
         for(Test obj : test_vec) {
-            actual = function_under_test(obj.input&);
+            actual = (FIO.*function_under_test)(obj.input);
             if(chk_out(obj) == false) {
                 std::cout << "Failed at test #" << obj.test_num << ": " << obj.test_name << ".\n";
             } else {
-                std::cout << "Test #" << obj.test_num << " passed.\n"
+                std::cout << "Test #" << obj.test_num << " passed.\n";
             }
         }
     }
@@ -70,8 +80,13 @@ void from_json(const nlohmann::json& j, Tester<std::string, ParsedNode,  std::st
 }
 
 int main(void) {
-    std::string json_path ="../tst_json/test1.json" ;
+    std::string json_path("C:\\Users\\wbhag\\Desktop\\Python Stuff\\riscv_assembler_v2\\json\\test1.json") ;
     Tester< std::string,  ParsedNode,  std::string (FileIO::*)(ParsedNode&)> tester(json_path, &(FileIO::prep_line_wrapper));
+    if(tester.init_tests(json_path) < 0) {
+        return -1;
+    }
+
+    tester.run_tests();
     return 0;
 
 }
