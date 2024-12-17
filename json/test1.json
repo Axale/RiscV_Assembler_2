@@ -1,102 +1,79 @@
-[
+  [
     {
       "test_num": 1,
-      "test_name": "Basic Test Case",
+      "test_name": "Valid instruction and address",
       "expected_success": true,
-      "expected_output": ":0400000001234567D1\n",
+      "expected_return": ":041234000AABBCCDD0\n",
+      "expected_output": "",
       "input": {
-        "address": 0,
-        "instruction": 19088743
+        "instruction": 2864434397,
+        "address": 4660
       }
     },
     {
       "test_num": 2,
-      "test_name": "Zero Address, Zero Instruction",
+      "test_name": "Zero instruction and zero address",
       "expected_success": true,
-      "expected_output": ":0400000000000000FC\n",
+      "expected_return": ":0400000000000000FC\n",
+      "expected_output": "",
       "input": {
-        "address": 0,
-        "instruction": 0
+        "instruction": 0,
+        "address": 0
       }
     },
     {
       "test_num": 3,
-      "test_name": "Maximum Address",
+      "test_name": "Maximum address with zero instruction",
       "expected_success": true,
-      "expected_output": ":04FFFF0001234567D0\n",
+      "expected_return": ":04FFFF000000000001\n",
+      "expected_output": "",
       "input": {
-        "address": 65535,
-        "instruction": 19088743
+        "instruction": 0,
+        "address": 65535
       }
     },
     {
       "test_num": 4,
-      "test_name": "Maximum Instruction",
+      "test_name": "Maximum instruction and maximum address",
       "expected_success": true,
-      "expected_output": ":04000400FFFFFFFFF2\n",
+      "expected_return": ":04FFFF00FFFFFFFF02\n",
+      "expected_output": "",
       "input": {
-        "address": 4,
-        "instruction": 4294967295
+        "instruction": 4294967295,
+        "address": 65535
       }
     },
     {
       "test_num": 5,
-      "test_name": "Address Not Multiple of 4",
-      "expected_success": false,
+      "test_name": "Checksum edge case",
+      "expected_success": true,
+      "expected_return": ":04FF00FF01234567B8\n",
       "expected_output": "",
       "input": {
-        "address": 3,
-        "instruction": 19088743
+        "instruction": 19088743,
+        "address": 65280
       }
     },
     {
       "test_num": 6,
-      "test_name": "Instruction with Alternating Bits",
-      "expected_success": true,
-      "expected_output": ":04000800AAAAAAAA26\n",
+      "test_name": "Invalid address (beyond 16-bit range)",
+      "expected_success": false,
+      "expected_return": "",
+      "expected_output": "",
       "input": {
-        "address": 8,
-        "instruction": 2863311530
+        "instruction": 305419896,
+        "address": 70000
       }
     },
     {
       "test_num": 7,
-      "test_name": "Address at Midpoint",
-      "expected_success": true,
-      "expected_output": ":040080000123456740\n",
-      "input": {
-        "address": 32768,
-        "instruction": 19088743
-      }
-    },
-    {
-      "test_num": 8,
-      "test_name": "Instruction of Only 1s",
-      "expected_success": true,
-      "expected_output": ":04000C00FFFFFFFFF3\n",
-      "input": {
-        "address": 12,
-        "instruction": 4294967295
-      }
-    },
-    {
-      "test_num": 9,
-      "test_name": "Instruction with Leading Zeros",
-      "expected_success": true,
-      "expected_output": ":04001000000000FCA0\n",
-      "input": {
-        "address": 16,
-        "instruction": 0
-      }
-    },
-    {
-      "test_num": 10,
-      "test_name": "Invalid Address Beyond 16-bit",
+      "test_name": "Negative address",
       "expected_success": false,
+      "expected_return": "",
       "expected_output": "",
       "input": {
-        "address": 70000,
-        "instruction": 123456789
+        "instruction": 305419896,
+        "address": -1
       }
     }
-]
+  ]
